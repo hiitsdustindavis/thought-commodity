@@ -2,15 +2,20 @@
   <header>
     <div class="header container">
       {{#link-to 'index'}}<h1>Thought Commodity</h1>{{/link-to}}
-      {{display-cart item=model}}
     </div>
   </header>
 
-  <section>
-    <div class="main container">
+<div class="container">
+  <section class=cart-display>
+    {{display-cart item=model}}
+  </section>
+
+  <section class="main">
+    <div>
       {{outlet}}
     </div>
   </section>
+</div>
 
   <footer class='footer'>
   </footer>
