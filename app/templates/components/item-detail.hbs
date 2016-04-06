@@ -1,0 +1,8 @@
+<div class="item-tile">
+  <h2>This is the Item-Detail</h2>
+  <h3>{{item.name}}</h3>
+  <p>{{item.description}}</p>
+  <img src="{{item.image}}" alt="{{item.name}}" />
+  <p>${{item.price}}</p>
+  <button {{action "addToCart" item}}>Add to Cart</button>
+</div>

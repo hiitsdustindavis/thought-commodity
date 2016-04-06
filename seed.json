@@ -1,0 +1,17 @@
+{ "items": [{
+    "name": "Nothing Is Impossible",
+    "description": "Ghandi Quote",
+    "image": "http://www.e-forwards.com/wp-content/uploads/2011/11/Strength-inspirational-poster.jpeg",
+    "price": "64.99"
+  }, {
+    "name": "Walk the Talk",
+    "description": "Penguins on a Beach?",
+    "image": "https://assets.entrepreneur.com/slideshow/10-motivational-posters-walk-talk.jpg",
+    "price": "104.99"
+  }, {
+    "name": "Vision",
+    "description": "Sloth Vision",
+    "image": "http://i0.wp.com/dailynous.com/wp-content/uploads/2015/02/motivational-nietzsche.png",
+    "price": "14.99"
+  }]
+}

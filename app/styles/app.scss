@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+  color: black;
+  font-family: sans-serif;
+}
+
+button {
+  padding: 1rem 2rem;
+  margin: 1rem 0 0 0;
+}
+
+.item-tile {
+  border: 2px solid pink;
+  margin: 1rem;
+}
+
+//ITEM ROUTE
+.cart-products {
+  display: flex;
+  flex: 1 1 25%;
+  flex-wrap: wrap;
+}
