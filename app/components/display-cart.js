@@ -25,3 +25,6 @@ export default Ember.Component.extend({
     return cartTotal;
   })
 });
+// All of our items are being push to our products[] with our add button. Because our added items are in an array we us a for loop with this.get() to access the object "shoppingCart" (Services are objects!)
+
+// 'shoppingCart.products.[]' means you access the shoppingCart object, then the products array[], and finally access the product(s) inside the products array. (notice the plural vs singular)

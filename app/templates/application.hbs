@@ -1,5 +1,17 @@
-{{#link-to 'index'}}<h1>Home</h1>{{/link-to}}
+<div class="wrapper">
+  <header>
+    <div class="header container">
+      {{#link-to 'index'}}<h1>Home</h1>{{/link-to}}
+      {{display-cart item=model}}
+    </div>
+  </header>
 
-{{display-cart item=model}}
+  <section>
+    <div class="main container">
+      {{outlet}}
+    </div>
+  </section>
 
-{{outlet}}
+  <footer class='footer'>
+  </footer>
+</div>

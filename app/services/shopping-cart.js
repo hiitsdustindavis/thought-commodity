@@ -16,3 +16,6 @@ export default Ember.Service.extend({
     this.get('products').setObjects([]);
   }
 });
+// These are methods to be used in components. They are general enough to be applied in multiple areas.
+
+//For example the .empty() method is in the emptyCart() method in the display-cart.js. The emptyCart() method is run when the button with the 'emptyCart' action in display-cart.js is clicked.

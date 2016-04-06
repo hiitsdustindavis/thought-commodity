@@ -6,15 +6,54 @@
   color: black;
   font-family: sans-serif;
 }
-
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
 button {
   padding: 1rem 2rem;
   margin: 1rem 0 0 0;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  background-color: tomato;
+  height:8rem;
+  width: 100%;
+}
+section {
+  flex: 1;
+}
+.main {
+  display: flex;
+  justify-content: space-around;
+}
+.footer {
+  background-color: tomato;
+  height:8rem;
+  width: 100%;
+}
+
 .item-tile {
+  display: flex;
+  flex-direction: column;
   border: 2px solid pink;
   margin: 1rem;
+  // width: 25%;
+  img {
+    width: 80%;
+    height: auto;
+  }
+  button {
+    width: 12rem;
+  }
 }
 
 //ITEM ROUTE
