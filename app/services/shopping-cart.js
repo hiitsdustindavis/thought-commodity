@@ -6,7 +6,13 @@ export default Ember.Service.extend({
   add(product) {
     this.get('products').pushObject(product);
   },
-  removeproduct(product) {
+  remove(product) {
     this.get('products').removeObject(product);
+  },
+  includes(product) {
+    return this.get('products').includes(product);
+  },
+  empty() {
+    this.get('products').setObjects([]);
   }
 });

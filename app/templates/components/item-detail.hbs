@@ -4,5 +4,9 @@
   <p>{{item.description}}</p>
   <img src="{{item.image}}" alt="{{item.name}}" />
   <p>${{item.price}}</p>
+{{#if item.inCart}}
+  <h5>This item is already in your cart!</h5>
+{{else}}
   <button {{action "addToCart" item}}>Add to Cart</button>
+{{/if}}
 </div>

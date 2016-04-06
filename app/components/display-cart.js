@@ -9,9 +9,12 @@ export default Ember.Component.extend({
     },
     hideCart: function(){
       this.set('cartIsShowing', false);
+    },
+    removeFromCart(product) {
+      this.get('shoppingCart').remove(product);
     }
   },
-  total: Ember.computed("shoppingCart.products", function() {
+  total: Ember.computed("shoppingCart.products.[]", function() {
     var cartTotal = 0;
     for(var i = 0; i < this.get("shoppingCart.products.length"); i++) {
       cartTotal += this.get("shoppingCart.products")[i].get("price");
