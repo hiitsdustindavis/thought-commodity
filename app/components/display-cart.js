@@ -12,6 +12,9 @@ export default Ember.Component.extend({
     },
     removeFromCart(product) {
       this.get('shoppingCart').remove(product);
+    },
+    emptyCart(products) {
+      this.get('shoppingCart').empty();
     }
   },
   total: Ember.computed("shoppingCart.products.[]", function() {
