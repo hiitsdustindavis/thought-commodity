@@ -1,6 +1,6 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  sortBy: ['rating:asc'],
+  sortBy: ['rating:desc'],
   sortedReviews: Ember.computed.sort('item.reviews', 'sortBy')
 });

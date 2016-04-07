@@ -3,32 +3,108 @@
   padding: 0;
   border: none;
   list-style: none;
+  text-decoration: none;
   color: black;
   font-family: sans-serif;
 }
+input, textarea {
+  border: 1px solid darken(#97D8B2, 5%);
+  padding: 0.8rem;
+  font-size: 0.8rem;
+  color: tomato;
+}
+
+::-webkit-input-placeholder {
+   color: darken(#97D8B2, 5%);
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: darken(#97D8B2, 5%);
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: darken(#97D8B2, 5%);
+}
+
+:-ms-input-placeholder {
+   color: darken(#97D8B2, 5%);
+}
+
 .container {
   width: 1000px;
   margin: 0 auto;
-  flex: 1;
+  // flex: 1;
+
 }
 button {
-  padding: 1rem 2rem;
+  padding: 0.8rem 1.8rem;
   margin: 1rem 0 0 0;
+  background-color: darken(#97D8B2, 5%);
+  border-radius: 4px;
+  // color: lighten(black, 25%);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: darken(#97D8B2, 15%);
+    cursor: pointer;
+  }
 }
 
+.select {
+  padding: 0.8rem;
+  font-size: 0.8rem;
+  width: 100%;
+  height: 2rem;
+  padding: 0.8rem;
+  background-color: white;
+  border: 1px solid darken(#97D8B2, 5%);
+  color: darken(#97D8B2, 5%);
+}
 .wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
-.header {
+
+//HEADER CLASSES
+header {
   display: flex;
-  justify-content: space-between;
-  align-items:center;
+  align-items: center;
   background-color: tomato;
   height:8rem;
   width: 100%;
 }
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // flex-direction: column;
+  a {
+    color: white;
+  }
+  .logo {
+    border: 5px solid white;
+    padding: 0.7rem;
+    // background: url('http://gph.is/1Hu37pD');
+    background-size: cover;
+    &:hover {
+      background: url('http://i.giphy.com/Vug8xFekRej1m.gif');
+      background-position: 50% 15%;
+      box-shadow: 20px 20px 1rem darken(tomato, 35%);
+      p {
+        text-shadow: 2px 2px 0px darken(tomato, 35%);
+      }
+    }
+    p {
+      font-size: 1rem;
+      color: white;
+      font-weight: bold;
+    }
+  }
+}
+
 
 .main {
   display: flex;
@@ -70,4 +146,42 @@ button {
   display: flex;
   flex: 1 1 25%;
   flex-wrap: wrap;
+}
+
+//ADMIN ROUTE
+.add-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  // border: 1px solid chartreuse;
+  input {
+    width: 300px;
+    margin: 0.8rem 0;
+    border-radius: 15px 0 15px 0
+  }
+}
+
+//INDEX Route
+.index-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 78vh;
+  background-image: url('http://cdn8.openculture.com/wp-content/uploads/2016/01/19230523/Nietzsche.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip:content-box;
+  h1 {
+    letter-spacing: 1rem;
+    color: tomato;
+    text-align: center;
+    text-transform: uppercase;
+    // text-shadow: 10px 10px 0px tomato;
+    font-size: 6rem;
+    font-weight: bolder;
+    // font-style: italic;
+    font-family: 'Work Sans', sans-serif;
+  }
 }

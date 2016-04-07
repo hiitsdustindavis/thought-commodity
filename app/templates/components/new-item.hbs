@@ -1,0 +1,19 @@
+<div class="input">
+  {{input value=name id="item-name" placeholder="Enter Item Name"}}
+</div>
+<div class="input">
+  {{input value=description id="item-description" placeholder="Enter Item Description"}}
+</div>
+<div class="input">
+  {{input value=price id="item-price" placeholder="Enter Item Price"}}
+</div>
+<div class="input">
+  {{input value=image id="item-image" placeholder="Enter Item Image URL"}}
+</div>
+  {{#x-select value=category class="select"}}
+    {{#x-option value='posters'}}Posters{{/x-option}}
+    {{#x-option value='candles'}}Candles{{/x-option}}
+    {{#x-option value='inspiration'}}Inpsiration{{/x-option}}
+    {{#x-option value='floppy-disks'}}Floppy Disks{{/x-option}}
+  {{/x-select}}
+  <button {{action 'saveItem'}}>Add New Item</button>

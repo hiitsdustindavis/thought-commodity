@@ -4,5 +4,6 @@ export default DS.Model.extend({
   author: DS.attr(),
   comment: DS.attr(),
   rating: DS.attr('number'),
-  item: DS.belongsTo('item', {async:true})
+  item: DS.belongsTo('item', {async:true}),
+  date: DS.attr()
 });

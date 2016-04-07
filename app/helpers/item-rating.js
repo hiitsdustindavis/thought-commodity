@@ -11,7 +11,7 @@ export function itemRating(params) {
     return Ember.String.htmlSafe('<p>&bigstar; &bigstar; &bigstar;</p>');
   } else if(itemRating === 2) {
     return Ember.String.htmlSafe('<p>&bigstar; &bigstar;</p>');
-  } else {
+  } else if (itemRating === 1){
   return Ember.String.htmlSafe('<p>&bigstar;</p>');
   }
 }

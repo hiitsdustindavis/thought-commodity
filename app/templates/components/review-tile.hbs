@@ -1,5 +1,6 @@
 {{#each sortedReviews as |review|}}
   <h4>{{review.author}}</h4>
   <p>{{review.comment}}</p>
+  <p>{{moment-from-now review.date 'MMMM Do YYYY, h:mm a' allow-empty=true}}</p>
   <p>{{item-rating review}}</p>
 {{/each}}

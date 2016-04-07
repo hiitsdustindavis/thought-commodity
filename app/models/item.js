@@ -5,6 +5,7 @@ export default DS.Model.extend({
   description: DS.attr(),
   image: DS.attr(),
   price: DS.attr('number'),
+  category: DS.attr(),
   reviews: DS.hasMany('review', {async:true}),
 
   shoppingCart: Ember.inject.service(),

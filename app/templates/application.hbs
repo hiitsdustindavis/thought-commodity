@@ -1,7 +1,16 @@
 <div class="wrapper">
   <header>
-    <div class="header container">
-      {{#link-to 'index'}}<h1>Thought Commodity</h1>{{/link-to}}
+    <div class="container">
+      <div class="header-nav">
+        {{#link-to 'index'}}<div class="logo">
+          <p>Thought</p><p>Commodity</p>
+        </div>{{/link-to}}
+        {{#link-to 'admin'}}Admin{{/link-to}}
+        {{#link-to 'posters'}}Posters{{/link-to}}
+        {{#link-to 'candles'}}Candles{{/link-to}}
+        {{#link-to 'inspiration'}}Inspiration{{/link-to}}
+        {{#link-to 'floppydisks'}}Floppy Disks{{/link-to}}
+      </div>
     </div>
   </header>
 
