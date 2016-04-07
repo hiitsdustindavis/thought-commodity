@@ -1,4 +1,5 @@
-{{#each item.reviews as |review|}}
+{{#each sortedReviews as |review|}}
   <h4>{{review.author}}</h4>
   <p>{{review.comment}}</p>
+  <p>{{item-rating review}}</p>
 {{/each}}
