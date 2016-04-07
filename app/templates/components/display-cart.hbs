@@ -9,8 +9,8 @@
 </div>
 <button {{action 'hideCart'}}>Hide Cart</button>
 <button {{action 'emptyCart' items}}>Empty Cart</button>
-{{total}}
+${{total}}
 {{else}}
 <button {{action 'showCart'}}>View Cart</button>
-{{total}}
+${{total}}
 {{/if}}
