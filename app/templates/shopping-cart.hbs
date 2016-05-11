@@ -1,4 +1,4 @@
-{{#if cartIsShowing}}
+<!-- {{#if cartIsShowing}}
 <div class="cart-products">
 {{#each shoppingCart.products as |product|}}
   <p>{{product.name}}</p>
@@ -7,10 +7,11 @@
   <button {{action "removeFromCart" product}}>Remove From Cart</button>
 {{/each}}
 </div>
-<!-- <button {{action 'hideCart'}}>Hide Cart</button> -->
+<button {{action 'hideCart'}}>Hide Cart</button>
 <button {{action 'emptyCart' items}}>Empty Cart</button>
 ${{total}}
 {{else}}
-<!-- <button {{action 'showCart'}}>View Cart</button> -->
+<button {{action 'showCart'}}>View Cart</button>
 ${{total}}
-{{/if}}
+{{/if}} -->
+{{display-cart item=model}}

@@ -12,6 +12,7 @@ Router.map(function() {
   this.route('candles');
   this.route('inspiration');
   this.route('floppydisks');
+  this.route('shopping-cart');
 });
 
 export default Router;

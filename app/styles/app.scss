@@ -89,18 +89,20 @@ header {
     padding: 0.7rem;
     // background: url('http://gph.is/1Hu37pD');
     background-size: cover;
-    &:hover {
-      background: url('http://i.giphy.com/Vug8xFekRej1m.gif');
-      background-position: 50% 15%;
-      box-shadow: 20px 20px 1rem darken(tomato, 35%);
-      p {
-        text-shadow: 2px 2px 0px darken(tomato, 35%);
-      }
-    }
+    transition: all 0.15s ease-in-out;
     p {
       font-size: 1rem;
       color: white;
       font-weight: bold;
+    }
+    &:hover {
+      transform: translate(-5px, -5px);
+      background: url('http://i.giphy.com/Vug8xFekRej1m.gif');
+      background-position: 50% 15%;
+      box-shadow: 10px 10px 1rem darken(tomato, 35%);
+      p {
+        text-shadow: 2px 2px 0px darken(tomato, 35%);
+      }
     }
   }
 }
@@ -184,4 +186,8 @@ header {
     // font-style: italic;
     font-family: 'Work Sans', sans-serif;
   }
+}
+
+display-cart {
+  position: absolute;
 }
