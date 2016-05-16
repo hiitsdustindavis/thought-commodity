@@ -31,7 +31,7 @@ input, textarea {
 }
 
 .container {
-  width: 1000px;
+  width: 80vw;
   margin: 0 auto;
   // flex: 1;
 
@@ -73,14 +73,13 @@ header {
   display: flex;
   align-items: center;
   background-color: tomato;
-  height:8rem;
+  height:12vh;
   width: 100%;
 }
 .header-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  // flex-direction: column;
   a {
     color: white;
   }
@@ -111,32 +110,67 @@ header {
 .main {
   display: flex;
   justify-content: space-around;
+  height: 80vh;
 }
+
 .item-tiles {
   display: flex;
-
+  justify-content: center;
+  flex-wrap: wrap;
+  // width: 80%;
+  border: 1px solid magenta;
+  margin: 0 auto;
 }
+
+.item-detail {
+  width: 100%;
+  margin-top: 1rem;
+  img {
+    max-width: 50%;
+    max-height: 40vh;
+  }
+}
+
+.add-review {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 1rem;
+  width: 100%;
+  textarea {
+    width: 40%;
+  }
+  select {
+    width: 20%;
+    height: 1.8rem;
+    color: white;
+    background-color: darken(#97D8B2, 5%);
+  }
+}
+
+.item-review {
+  // border: 1px blue solid;
+  margin-bottom: 1rem;
+}
+
 .cart-display {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  border: 1px blue solid;
 }
-.footer {
-  background-color: tomato;
-  height:8rem;
-  width: 100%;
-}
+// .footer {
+//   background-color: tomato;
+//   height:8rem;
+//   width: 100%;
+// }
 
 .item-tile {
   display: flex;
   flex-direction: column;
-  border: 2px solid pink;
+  // border: 2px solid pink;
   margin: 1rem;
-  // width: 25%;
   img {
-    width: 80%;
-    height: auto;
+    max-width: 14rem;
   }
   button {
     width: 12rem;
@@ -154,7 +188,8 @@ header {
 .add-item {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  width: 100%;
   // border: 1px solid chartreuse;
   input {
     width: 300px;
@@ -170,11 +205,10 @@ header {
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 78vh;
+  height: 88vh;
   background-image: url('http://cdn8.openculture.com/wp-content/uploads/2016/01/19230523/Nietzsche.gif');
   background-repeat: no-repeat;
   background-size: cover;
-  background-clip:content-box;
   h1 {
     letter-spacing: 1rem;
     color: tomato;

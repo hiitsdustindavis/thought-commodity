@@ -1,11 +1,13 @@
-<div class="item-tile">
-  <h3>{{item.name}}</h3>
-  <p>{{item.description}}</p>
-  <img src="{{item.image}}" alt="{{item.name}}" />
-  <p>${{item.price}}</p>
-{{#if item.inCart}}
-  <h5>This item is already in your cart!</h5>
-{{else}}
-  <button {{action "addToCart" item}}>Add to Cart</button>
-{{/if}}
+<div class="item-detail">
+  <div class="container">
+    <h3>{{item.name}}</h3>
+    <p>{{item.description}}</p>
+    <img src="{{item.image}}" alt="{{item.name}}" />
+    <p>${{item.price}}</p>
+    {{#if item.inCart}}
+    <h5>This item is already in your cart!</h5>
+    {{else}}
+    <button {{action "addToCart" item}}>Add to Cart</button>
+    {{/if}}
+  </div>
 </div>

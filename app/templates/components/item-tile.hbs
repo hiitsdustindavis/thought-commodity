@@ -1,9 +1,10 @@
-<div class="item-tile">
+<div>
   {{#link-to 'item' item.id}}
-  <h3>This is the Item-Tile</h3>
-  <p>{{item.name}}</p>
-  <img src="{{item.image}}" alt="{{item.name}}" />
-  <p>${{item.price}}</p>
+  <div class="item-tile">
+    <p>{{item.name}}</p>
+    <img src="{{item.image}}" alt="{{item.name}}" />
+    <p>${{item.price}}</p>
+  </div>
   {{/link-to}}
+  <button {{action 'deleteItem' item}}>Remove Item</button>
 </div>
-<button {{action 'deleteItem' item}}>Remove Item</button>

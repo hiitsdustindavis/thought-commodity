@@ -1,10 +1,14 @@
-{{input value=author id="author" placeholder="Put it name here."}}
-{{textarea value=comment id="comment" placeholder="Tell me all your thoughts on dog"}}
-{{#x-select value=rating}}
-  {{#x-option value='1'}}&bigstar;{{/x-option}}
-  {{#x-option value='2'}}&bigstar; &bigstar;{{/x-option}}
-  {{#x-option value='3'}}&bigstar; &bigstar; &bigstar;{{/x-option}}
-  {{#x-option value='4'}}&bigstar; &bigstar; &bigstar; &bigstar;{{/x-option}}
-  {{#x-option value='5'}}&bigstar; &bigstar; &bigstar; &bigstar; &bigstar;{{/x-option}}
-{{/x-select}}
-<button {{action 'saveReview'}}>Review</button>
+<div  class="container">
+  <div class="add-review">
+    {{input value=author id="author" placeholder="Put it name here."}}
+    {{textarea value=comment id="comment" placeholder="Tell me all your thoughts on dog"}}
+    {{#x-select value=rating}}
+    {{#x-option value='1'}}&bigstar;{{/x-option}}
+    {{#x-option value='2'}}&bigstar; &bigstar;{{/x-option}}
+    {{#x-option value='3'}}&bigstar; &bigstar; &bigstar;{{/x-option}}
+    {{#x-option value='4'}}&bigstar; &bigstar; &bigstar; &bigstar;{{/x-option}}
+    {{#x-option value='5'}}&bigstar; &bigstar; &bigstar; &bigstar; &bigstar;{{/x-option}}
+    {{/x-select}}
+    <button {{action 'saveReview'}}>Review</button>
+  </div>
+</div>
